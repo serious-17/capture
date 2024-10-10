@@ -1,9 +1,13 @@
 import React from "react";
+import Nav from "./components/Nav";
+import AboutUs from "./pages/AboutUs";
+import "./styles/GlobalStyles.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Capture</h1>
+      <Nav />
+      <AboutUs />
     </div>
   );
 }
