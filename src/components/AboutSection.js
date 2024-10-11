@@ -3,26 +3,39 @@ import style from "../styles/AboutSection.module.css";
 import photographer from "../images/home1.png";
 import Wave from "./Wave";
 
+import { motion } from "framer-motion";
+import { fade, photoAnim, titleAnim } from "../animation";
+
 const AboutSection = () => {
   return (
     <div className={style.about}>
       <div className={style.description}>
         <div className={style.title}>
-          <h2>We work to make</h2>
-          <h2>
-            your <span>dreams</span>
-          </h2>
-          <h2>come true</h2>
+          <div className={style.hide}>
+            <motion.h2 variants={titleAnim}>We work to make</motion.h2>
+          </div>
+          <div className={style.hide}>
+            <motion.h2 variants={titleAnim}>
+              your <span>dreams</span>
+            </motion.h2>
+          </div>
+          <div className={style.hide}>
+            <motion.h2 variants={titleAnim}>come true</motion.h2>
+          </div>
         </div>
-        <p>
+        <motion.p variants={fade}>
           Contact us for any photography or videography ideas that you have. We
           have professionals with amazing skills.
-        </p>
-        <button>Contact Us</button>
+        </motion.p>
+        <motion.button variants={fade}>Contact Us</motion.button>
       </div>
 
       <div className={style.image}>
-        <img src={photographer} alt="photographer" />
+        <motion.img
+          variants={photoAnim}
+          src={photographer}
+          alt="photographer"
+        />
       </div>
       <Wave />
     </div>
