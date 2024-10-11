@@ -1,0 +1,35 @@
+.contact {
+  background: white;
+  color: black;
+  padding: 5rem 10rem;
+  min-height: 90vh;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.navLinks {
+  flex-direction: column;
+  margin: 5rem 0rem;
+}
+
+.navLinks li {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #353535;
+  margin: 2rem;
+}
+
+.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #353535;
+  border-radius: 50%;
+}
