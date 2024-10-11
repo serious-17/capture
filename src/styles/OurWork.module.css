@@ -1,0 +1,31 @@
+.work {
+  padding: 5rem 10rem;
+  background: white;
+  color: black;
+}
+
+.movie {
+  margin-bottom: 10rem;
+}
+
+.movie:last-child {
+  margin-bottom: 4rem;
+}
+
+.movie h2 {
+  font-weight: 500;
+  padding: 1rem 0rem;
+}
+
+.movie img {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+}
+
+.line {
+  width: 100%;
+  height: 0.5rem;
+  background: #23d997;
+  margin-bottom: 3rem;
+}
