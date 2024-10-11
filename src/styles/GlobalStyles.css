@@ -8,6 +8,7 @@
 
 body {
   background: #1b1b1b;
+  color: white;
   font-family: "Inter", sans-serif;
 }
 
@@ -33,9 +34,15 @@ h5 {
 
 p {
   font-size: 1.4rem;
+  color: rgb(204, 204, 204);
 }
 
 button {
   font-family: "Inter", sans-serif;
   cursor: pointer;
+}
+
+span {
+  color: #23d887;
+  font-weight: bold;
 }

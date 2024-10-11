@@ -1,0 +1,37 @@
+.faqSection {
+  min-height: 100vh;
+  padding: 5rem 10rem;
+}
+
+.faqSection h2 {
+  padding: 2rem 0rem;
+}
+
+.faqSection span {
+  display: block;
+}
+
+.question {
+  padding: 3rem 0rem;
+  cursor: pointer;
+}
+
+.question h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.question p {
+  padding: 1rem 0rem;
+}
+
+.answer {
+  padding: 2rem 0rem;
+}
+
+.line {
+  width: 100%;
+  background: #cccccc;
+  height: 0.2rem;
+  margin: 2rem 0rem;
+}
