@@ -7,7 +7,8 @@ import style from "../styles/OurWork.module.css";
 import { Link } from "react-router-dom";
 import useScroll from "../components/useScroll";
 import { motion } from "framer-motion";
-import { lineAnim, scrollAnim } from "../animation";
+import { lineAnim, pageAnim, scrollAnim } from "../animation";
+import { ScrollTop } from "../components/ScrollTop";
 
 const OurWork = () => {
   const [element, controls] = useScroll();
@@ -15,7 +16,14 @@ const OurWork = () => {
   const [element3, controls3] = useScroll();
 
   return (
-    <div className={style.work}>
+    <motion.div
+      className={style.work}
+      variants={pageAnim}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      <ScrollTop />
       <motion.div
         className={style.movie}
         ref={element}
@@ -75,7 +83,7 @@ const OurWork = () => {
           <img src={goodTimes} alt="good-times" />
         </Link>
       </motion.div>
-    </div>
+    </motion.div>
   );
 };
 

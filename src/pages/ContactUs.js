@@ -1,9 +1,19 @@
 import React from "react";
 import style from "../styles/Contact.module.css";
+import { motion } from "framer-motion";
+import { pageAnim } from "../animation";
+import { ScrollTop } from "../components/ScrollTop";
 
 const ContactUs = () => {
   return (
-    <div className={style.contact}>
+    <motion.div
+      className={style.contact}
+      variants={pageAnim}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      <ScrollTop />
       <h2>Get in touch.</h2>
       <ul className={style.navLinks}>
         <li>
@@ -19,7 +29,7 @@ const ContactUs = () => {
           <h3>Social Media</h3>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

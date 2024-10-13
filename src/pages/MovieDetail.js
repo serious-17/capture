@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import { MovieState } from "../data";
 import style from "../styles/MovieDetail.module.css";
 import { motion } from "framer-motion";
+import { pageAnim } from "../animation";
+import { ScrollTop } from "../components/ScrollTop";
 
 const MovieDetail = () => {
   const { pathname } = useLocation();
@@ -13,7 +15,14 @@ const MovieDetail = () => {
   )[0];
 
   return (
-    <motion.div className={style.movieDetail}>
+    <motion.div
+      className={style.movieDetail}
+      variants={pageAnim}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+    >
+      <ScrollTop />
       <div className={style.intro}>
         <h2>{currentMovie.title}</h2>
         <img src={currentMovie.mainImg} alt="" />

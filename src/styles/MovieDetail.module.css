@@ -6,7 +6,7 @@
 }
 .intro h2 {
   position: absolute;
-  top: 20%;
+  top: 10vh;
   left: 50%;
   transform: translate(-50%, -20%);
   font-weight: 500;
