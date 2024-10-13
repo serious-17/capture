@@ -29,3 +29,25 @@
   background: #23d997;
   margin-bottom: 3rem;
 }
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.slide1 {
+  background: #fffebf;
+}
+.slide2 {
+  background: #ff8efb;
+}
+.slide3 {
+  background: #8ed2ff;
+}
+.slide4 {
+  background: #8effa0;
+}

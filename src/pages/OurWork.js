@@ -7,7 +7,15 @@ import style from "../styles/OurWork.module.css";
 import { Link } from "react-router-dom";
 import useScroll from "../components/useScroll";
 import { motion } from "framer-motion";
-import { fade, lineAnim, pageAnim, photoAnim, scrollAnim } from "../animation";
+import {
+  extract,
+  fade,
+  lineAnim,
+  pageAnim,
+  photoAnim,
+  scrollAnim,
+  slideAnim,
+} from "../animation";
 import { ScrollTop } from "../components/ScrollTop";
 
 const OurWork = () => {
@@ -24,6 +32,26 @@ const OurWork = () => {
       animate="show"
     >
       <ScrollTop />
+
+      <motion.div variants={extract} className={style.slide}>
+        <motion.div
+          className={`${style.slide} ${style.slide1}`}
+          variants={slideAnim}
+        ></motion.div>
+        <motion.div
+          className={`${style.slide} ${style.slide2}`}
+          variants={slideAnim}
+        ></motion.div>
+        <motion.div
+          className={`${style.slide} ${style.slide3}`}
+          variants={slideAnim}
+        ></motion.div>
+        <motion.div
+          className={`${style.slide} ${style.slide4}`}
+          variants={slideAnim}
+        ></motion.div>
+      </motion.div>
+
       <div className={style.movie}>
         <motion.h2 variants={fade}>The Athlete</motion.h2>
         <motion.div className={style.line} variants={lineAnim}></motion.div>
