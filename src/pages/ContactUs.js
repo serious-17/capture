@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../styles/Contact.module.css";
 import { motion } from "framer-motion";
-import { pageAnim } from "../animation";
+import { fade, pageAnim, titleAnim } from "../animation";
 import { ScrollTop } from "../components/ScrollTop";
 
 const ContactUs = () => {
@@ -14,20 +14,31 @@ const ContactUs = () => {
       animate="show"
     >
       <ScrollTop />
-      <h2>Get in touch.</h2>
+      <div className="hide">
+        <motion.h2 variants={titleAnim}>Get in touch.</motion.h2>
+      </div>
+
       <ul className={style.navLinks}>
-        <li>
-          <div className={style.circle}></div>
-          <h3>Send Us a Message</h3>
-        </li>
-        <li>
-          <div className={style.circle}></div>
-          <h3>Send an email</h3>
-        </li>
-        <li>
-          <div className={style.circle}></div>
-          <h3>Social Media</h3>
-        </li>
+        <div className="hide">
+          <motion.li variants={titleAnim}>
+            <div className={style.circle}></div>
+            <h3>Send Us a Message</h3>
+          </motion.li>
+        </div>
+
+        <div className="hide">
+          <motion.li variants={titleAnim}>
+            <div className={style.circle}></div>
+            <h3>Send an email</h3>
+          </motion.li>
+        </div>
+
+        <div className="hide">
+          <motion.li variants={titleAnim}>
+            <div className={style.circle}></div>
+            <h3>Social Media</h3>
+          </motion.li>
+        </div>
       </ul>
     </motion.div>
   );
