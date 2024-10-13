@@ -11,15 +11,15 @@ const AboutSection = () => {
     <div className={style.about}>
       <div className={style.description}>
         <div className={style.title}>
-          <div className={style.hide}>
+          <div className="hide">
             <motion.h2 variants={titleAnim}>We work to make</motion.h2>
           </div>
-          <div className={style.hide}>
+          <div className="hide">
             <motion.h2 variants={titleAnim}>
               your <span>dreams</span>
             </motion.h2>
           </div>
-          <div className={style.hide}>
+          <div className="hide">
             <motion.h2 variants={titleAnim}>come true</motion.h2>
           </div>
         </div>

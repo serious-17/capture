@@ -47,3 +47,7 @@ span {
   color: #23d887;
   font-weight: bold;
 }
+
+.hide {
+  overflow: hidden;
+}

@@ -49,7 +49,3 @@ svg {
   left: 0;
   pointer-events: none;
 }
-
-.hide {
-  overflow: hidden;
-}

@@ -7,7 +7,7 @@ import style from "../styles/OurWork.module.css";
 import { Link } from "react-router-dom";
 import useScroll from "../components/useScroll";
 import { motion } from "framer-motion";
-import { lineAnim, pageAnim, scrollAnim } from "../animation";
+import { fade, lineAnim, pageAnim, photoAnim, scrollAnim } from "../animation";
 import { ScrollTop } from "../components/ScrollTop";
 
 const OurWork = () => {
@@ -24,25 +24,15 @@ const OurWork = () => {
       animate="show"
     >
       <ScrollTop />
-      <motion.div
-        className={style.movie}
-        ref={element}
-        variants={scrollAnim}
-        animate={controls}
-        initial="hidden"
-      >
-        <h2>The Athlete</h2>
-        <motion.div
-          className={style.line}
-          ref={element}
-          variants={lineAnim}
-          animate={controls}
-          initial="hidden"
-        ></motion.div>
+      <div className={style.movie}>
+        <motion.h2 variants={fade}>The Athlete</motion.h2>
+        <motion.div className={style.line} variants={lineAnim}></motion.div>
         <Link to={"/work/the-athlete"}>
-          <img src={athlete} alt="the-athlete" />
+          <div className="hide">
+            <motion.img variants={photoAnim} src={athlete} alt="the-athlete" />
+          </div>
         </Link>
-      </motion.div>
+      </div>
 
       <motion.div
         className={style.movie}
