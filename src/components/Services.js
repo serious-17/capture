@@ -5,10 +5,21 @@ import clock from "../images/clock.svg";
 import teamwork from "../images/teamwork.svg";
 import money from "../images/money.svg";
 import camera from "../images/home2.png";
+import { motion } from "framer-motion";
+import useScroll from "./useScroll";
+import { scrollAnim } from "../animation";
 
 const Services = () => {
+  const [element, controls] = useScroll();
+
   return (
-    <div className={style.services}>
+    <motion.div
+      className={style.services}
+      ref={element}
+      variants={scrollAnim}
+      initial="hidden"
+      animate={controls}
+    >
       <div className={style.description}>
         <h2>
           High <span>quality</span> services
@@ -50,7 +61,7 @@ const Services = () => {
       <div className={style.image}>
         <img src={camera} alt="camera" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

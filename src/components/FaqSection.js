@@ -3,12 +3,22 @@ import { questions } from "../data";
 import QuestionComp from "./QuestionComp";
 import { v4 } from "uuid";
 import style from "../styles/FaqSection.module.css";
+import { motion } from "framer-motion";
+import useScroll from "./useScroll";
+import { scrollAnim } from "../animation";
 
 const FaqSection = () => {
   const faqs = questions();
+  const [element, controls] = useScroll();
 
   return (
-    <div className={style.faqSection}>
+    <motion.div
+      className={style.faqSection}
+      ref={element}
+      variants={scrollAnim}
+      animate={controls}
+      initial="hidden"
+    >
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
@@ -21,7 +31,7 @@ const FaqSection = () => {
           style={style}
         />
       ))}
-    </div>
+    </motion.div>
   );
 };
 
