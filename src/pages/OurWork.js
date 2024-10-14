@@ -33,7 +33,11 @@ const OurWork = () => {
     >
       <ScrollTop />
 
-      <motion.div variants={extract} className={style.slide}>
+      <motion.div
+        variants={extract}
+        className={style.slide}
+        style={{ pointerEvents: "none" }}
+      >
         <motion.div
           className={`${style.slide} ${style.slide1}`}
           variants={slideAnim}
