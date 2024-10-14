@@ -55,5 +55,5 @@ export const slideAnim = {
 
 export const extract = {
   hidden: { opacity: 1 },
-  show: { opacity: 1, transition: { duration: 1, staggerChildren: 0.1 } },
+  show: { opacity: 1, transition: { staggerChildren: 0.12, ease: "easeOut" } },
 };
