@@ -44,10 +44,11 @@ ul li {
   nav {
     display: block;
     text-align: center;
-    padding: 2rem 5rem;
+    padding: 2rem 5rem 2.5rem 5rem;
   }
   .logo {
     padding-bottom: 1.5rem;
+    margin: 0.25rem;
   }
   ul {
     justify-content: space-around;
@@ -55,7 +56,7 @@ ul li {
 }
 @media screen and (max-width: 500px) {
   nav {
-    padding: 2rem;
+    padding: 2rem 2rem 2.5rem 2rem;
   }
   ul {
     justify-content: space-between;

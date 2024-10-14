@@ -47,6 +47,11 @@
     padding: 4rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .faqSection {
+    text-align: center;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .faqSection {
