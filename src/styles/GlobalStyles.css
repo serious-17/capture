@@ -51,3 +51,26 @@ span {
 .hide {
   overflow: hidden;
 }
+
+@media screen and (max-width: 1500px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 70%;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 4rem;
+  }
+}

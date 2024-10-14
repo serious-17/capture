@@ -33,3 +33,20 @@
   background: #353535;
   border-radius: 50%;
 }
+
+.message {
+  color: #353535;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+  .navLinks h3 {
+    font-size: 2.5rem;
+  }
+  .message {
+    display: block;
+  }
+}

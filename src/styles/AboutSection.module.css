@@ -49,3 +49,27 @@ svg {
   left: 0;
   pointer-events: none;
 }
+
+@media screen and (max-width: 1200px) {
+  .about {
+    display: block;
+    text-align: center;
+    padding: 5rem 8rem;
+  }
+  .image {
+    margin: 0;
+    margin-top: 3rem;
+  }
+  svg {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 4rem 0rem;
+  }
+  .description {
+    padding: 0rem 5rem;
+  }
+}

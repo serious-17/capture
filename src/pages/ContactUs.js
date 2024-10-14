@@ -22,7 +22,9 @@ const ContactUs = () => {
         <div className="hide">
           <motion.li variants={titleAnim}>
             <div className={style.circle}></div>
-            <h3>Send Us a Message</h3>
+            <h3>
+              Send Us a <span className={style.message}>Message</span>
+            </h3>
           </motion.li>
         </div>
 

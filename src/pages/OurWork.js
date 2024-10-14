@@ -30,6 +30,7 @@ const OurWork = () => {
       exit="exit"
       initial="hidden"
       animate="show"
+      style={{ overflowX: "hidden" }}
     >
       <ScrollTop />
 

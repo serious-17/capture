@@ -1,6 +1,3 @@
-.movieDetail {
-}
-
 .intro {
   padding-top: 20vh;
 }
@@ -55,4 +52,17 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .awards {
+    margin: 5rem 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .awards {
+    display: block;
+    margin: 4rem 0rem;
+  }
 }

@@ -52,3 +52,21 @@
 .slide4 {
   background: #8effa0;
 }
+
+@media screen and (max-width: 1200px) {
+  .work {
+    padding: 5rem 8rem;
+  }
+  .slide {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work {
+    padding: 4rem 0rem;
+  }
+  .movie h2 {
+    padding: 1rem;
+  }
+}

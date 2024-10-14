@@ -8,7 +8,13 @@ import { ScrollTop } from "../components/ScrollTop";
 
 const AboutUs = () => {
   return (
-    <motion.div variants={pageAnim} exit="exit" initial="hidden" animate="show">
+    <motion.div
+      variants={pageAnim}
+      exit="exit"
+      initial="hidden"
+      animate="show"
+      style={{ overflow: "hidden" }}
+    >
       <ScrollTop />
       <AboutSection />
       <Services />

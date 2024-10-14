@@ -35,3 +35,24 @@
   height: 0.2rem;
   margin: 2rem 0rem;
 }
+
+@media screen and (max-width: 1200px) {
+  .faqSection {
+    padding: 5rem 8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .faqSection {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .faqSection {
+    padding: 4rem 2rem;
+  }
+  .question h4 {
+    font-size: 1.5rem;
+  }
+}
