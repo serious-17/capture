@@ -3,7 +3,7 @@ import { questions } from "../data";
 import QuestionComp from "./QuestionComp";
 import { v4 } from "uuid";
 import style from "../styles/FaqSection.module.css";
-import { motion } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
 import useScroll from "./useScroll";
 import { scrollAnim } from "../animation";
 
@@ -22,6 +22,7 @@ const FaqSection = () => {
       <h2>
         Any Questions <span>FAQ</span>
       </h2>
+<LayoutGroup>
       {faqs.map((faq) => (
         <QuestionComp
           question={faq.question}
@@ -31,6 +32,7 @@ const FaqSection = () => {
           style={style}
         />
       ))}
+            </LayoutGroup>
     </motion.div>
   );
 };
